@@ -1,0 +1,22 @@
+<div class="card">
+<p id="notice"><%= notice %></p>
+
+<div class="card-body">
+<p class="cardtext">
+  <strong>Title:</strong>
+  <%= @comment.title %>
+</p>
+
+<p class="cardtext">
+  <strong>Body:</strong>
+  <%= @comment.body %>
+</p>
+
+<p class="cardtext">
+  <strong>Events:</strong>
+  <%= @comment.events_id %>
+</p>
+</div>
+</div>
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
